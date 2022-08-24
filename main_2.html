@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<div class="global-wrap">
+    <div class="main-content">
+        <header id="main-header" >
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-6 hidden-sm-up hidden-md-up hidden-lg-up hidden-xl-up"></div>
+
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-4 head-xs-pos-logo">
+                            <a class="logo" href="#">
+                                <img src="img/pic/wiz-trans_logo_ru.svg" alt="logo">
+                            </a>
+                        </div>
+
+                        <div class="col-1 col-sm-2 col-md-2 col-lg-1 head-xs-pos-suitcase">
+                            <div class="header-suitcase" id="last-orders-container">
+                                <a href="#">
+                                    <i class="fa fa-suitcase"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-5 col-md-5 col-lg-3 login_for_phones_wrap">
+                            <div class="login_for_phones login_for_phones-xs">
+                                <p class="text-s  hidden-xs">
+                                    Бронирование по телефону:
+                                </p>
+                                <div class="float-left" id="changePhone">
+                                    <a class="after-comma" href="tel:+380443740520">+38 (044) 374-0520</a>  <a class="after-comma" href="tel:+380733740520">+38 (073) 374-0520</a>
+                                    <a class="after-comma" href="tel:+380952920402">+38 (095) 292-0402</a>  <a class="after-comma" href="tel:+380673200402">+38 (067) 320-0402</a>
+                                    <a href="tel:+48123337165">+48 12 3337165</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-0 col-sm-2 float-md-left col-md-2 col-lg-1 head-xs-pos-locale">
+                            <select class="form-control" id="changeLocale">
+                                <option value="">POL</option>
+                                <option value="">УКР</option>
+                                <option selected="selected" value="">РУС</option>
+                            </select>
+                        </div>
+
+                        <div class="col-0 col-sm-4 float-md-left col-md-4 col-lg-3 head-xs-pos-login">
+                            <div class="login_for_bonuses">
+                                <p class="text-s">
+                                    Начисление бонусов
+                                </p>
+
+                                <ul class="social-login">
+                                    <li>
+                                        <a href="#" class="top-login soc" title="Войти через Facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="cabinet">
+                                        <a href="#" class="top-login"  title="Войти">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+
+
+
+
+
+                <nav class=" row nav">
+                    <a class="active" href="#">Главная</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Скидки</a>
+                    <a href="#">Как купить</a>
+                    <a href="#">Выкуп бронирования</a>
+                    <a href="#">Возврат билетов</a>
+                    <a href="#">Частые вопросы</a>
+                    <a href="#">О нас</a>
+                    <div class="dropdown show">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Контакты
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Киев</a>
+                            <a class="dropdown-item" href="#">Львов</a>
+                            <a class="dropdown-item" href="#">Варшава</a>
+                            <a class="dropdown-item" href="#">Краков</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 red">
+                        <form id="search-form" action="">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label for="depart-place-bus">Откуда</label>
+                                        <div class="form-group-wrap">
+                                            <input class="form-control" id="depart-place-bus" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <span id="point-exchange"></span>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label for="arrive-place">Куда</label>
+                                        <div class="form-group-wrap">
+                                            <input class="form-control" id="arrive-place" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-4"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 red">БАНЕР</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container discountBadge hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-md-3 discountBadge-info">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="https://wiz-trans.com/assets/img/discountBadgeHand.png" alt="Hand">
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    рейсы<br>без распечатки<br>билета
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 discountBadge-info">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="https://wiz-trans.com/assets/img/discountBadgeLetter.png" alt="Letter">
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    реальные<br>скидки<br>и бонусы
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 discountBadge-info">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="https://wiz-trans.com/assets/img/discountBadgePurse.png" alt="Map">
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    оплата<br>наличными<br>и картой
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 discountBadge-info">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="https://wiz-trans.com/assets/img/discountBadgeMap.png" alt="Purse">
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    Офисы продаж<br>в Польше<br>и Украине
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-2 trip-list">
+                    <h4>Расписание</h4>
+                    <ul>
+                        <li><a href="#">Киев - Сумы</a></li>
+                        <li><a href="#">Киев - Сумы</a></li>
+                        <li><a href="#">Киев - Сумы</a></li>
+                        <li><a href="#">Киев - Сумы</a></li>
+                        <li><a href="#">Киев - Сумы</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 main-content">
+
+
+                    <div class="special-offers">
+                        <h4>Популярные направления</h4>
+                        <table class="" border_margin="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Киев - Варшава</span> <span class="hot-price">от 510 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Полтава - Познань</span> <span class="hot-price">от 1150 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Киев - Краков</span> <span class="hot-price">от 600 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Варшава - Киев</span> <span class="hot-price">от 493 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Львов - Варшава</span> <span class="hot-price">от 357 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Львов - Вроцлав</span> <span class="hot-price">от 500 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Львов - Краков</span> <span class="hot-price">от 347 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Познань - Полтава</span> <span class="hot-price">от 1250 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Киев - Вроцлав</span> <span class="hot-price">от 850 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Вроцлав - Киев</span> <span class="hot-price">от 760 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Киев - Лодзь</span> <span class="hot-price">от 736 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Житомир - Варшава</span> <span class="hot-price">от 429 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Одесса - Варшава</span> <span class="hot-price">от 900 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Львов - Люблин</span> <span class="hot-price">от 250 грн</span></a></td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Харьков - Варшава</span> <span class="hot-price">от 753 грн</span></a></td>
+                                <td align="left" valign="middle"><a href="#" style="text-decoration:none"><span class="hot-price-text">Винница - Варшава</span> <span class="hot-price">от 605 грн</span></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <h1>Заголовок h1, пусть будет более длинным и все еще не заканчивается </h1>
+                    <h2>Заголовок h2, пусть будет более длинным и все еще не заканчивается </h2>
+                    <h3>Заголовок h3, пусть будет более длинным и все еще не заканчивается </h3>
+                    <h4>Заголовок h4, пусть будет более длинным и все еще не заканчивается </h4>
+                    <h5>Заголовок h5, пусть будет более длинным и все еще не заканчивается </h5>
+                    <h6>Заголовок h6, пусть будет более длинным и все еще не заканчивается </h6>
+
+                    <hr>
+                    <br>
+
+                    <p>На нашем сайте вы можете купить билет на автобус — в наиболее популярных направлениях из Украины: в
+                        Польшу, Германию, Испанию, Россию, Чехию. Из Польши дальше можно добраться в Эстонию, Латвию, Литву,
+                        Данию, Нидерланды, Бельгию и Францию. Через Чехию — в Швейцарию, Италию, Францию, Австрию, Венгрию.
+                        Предложенные на сайте рейсы легко стыковать с другими рейсами или видами транспорта, что сделает
+                        путешествие еще комфортнее. Международные автобусные маршруты проходят через такие крупные
+                        транспортные узлы, как Киев, Львов, Краков, Варшава, Франкфурт, Берлин. При этом есть возможность
+                        сделать пересадку с рейса на рейс в любом городе, где автобус делает остановку.</p>
+                    <p><a href="#">ссылка</a> <br>
+                        <b>Жирное начертание текста</b> <br>
+                        <i>Курсивное начертание текста</i> <br>
+                    <pre>Текст пишется как есть, включая все пробелы</pre>
+                    </p>
+                    <ul>
+                        <li>Укажите город отправления и пункт прибытия</li>
+                        <li>Обозначьте точную дату поездки, либо временной промежуток</li>
+                        <li>Выберите количество пассажиров с обозначением льготной группы (дети, молодежь, пенсионеры)</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-wrapLogo">
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                                                    <span class="logo">
+                                WIZ-TRANS <img src="https://wiz-trans.com/assets/img/bus.png" alt="Wiz Trans" title="Wiz Trans">
+                            </span>
+                            <p class="hidden-xs mb20 footer-wrapLogo-about">Купить билет на международный рейс теперь легко! У нас Вы найдете только самые лучшие билеты.</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-wrapLogo-address">
+                        Адрес:
+                        Киев, ул. Богдана Хмельницкого 16-22
+                        <a target="_blank" href="#"><i style="font-size: 20px;" class="fa fa-map-marker"></i></a>
+                    </div>
+                    <div class="footer-wrapLogo-address">Пн-Вс 08:00-20:00</div>
+
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row footer-menu">
+                        <div class="col-xs-12 col-sm-6 col-md-6 ">
+                            <ul class="left-list">
+                                <li class="active">
+                                    <span class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Главная">Главная</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Акции">Акции</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Скидки">Скидки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Как купить">Как купить</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Выкуп бронирования">Выкуп бронирования</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Возврат билетов">Возврат билетов</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  Частые вопросы">Частые вопросы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="TopMenu" data-event-type="Click" data-event-desc="Click top menu item :  О нас">О нас</a>
+                                </li>
+                                <li dropdown="">
+                                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Контакты</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Киев</a></li>
+                                        <li><a href="#">Львов</a></li>
+                                        <li><a href="#">Варшава</a></li>
+                                        <li><a href="#">Краков</a></li>
+                                    </ul>
+                                </li>                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 ">
+                            <ul class="pl0">
+                                <li>
+                                    <a href="#">Договор оферты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Правила перевозки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="DiscountsTopMenu" data-event-type="Click" data-event-desc="Click discount Скидки студентам">Скидки студентам</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="DiscountsTopMenu" data-event-type="Click" data-event-desc="Click discount Скидки детям">Скидки детям</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="DiscountsTopMenu" data-event-type="Click" data-event-desc="Click discount Скидки накопительные">Скидки накопительные</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sent-ga-event" data-event-name="DiscountsTopMenu" data-event-type="Click" data-event-desc="Click discount Групповые скидки">Групповые скидки</a>
+                                </li>
+                                <li class="four">
+                                    <a href="#" class="sent-ga-event" data-event-name="DiscountsTopMenu" data-event-type="Click" data-event-desc="Click discount Скидки туда-обратно">Скидки туда-обратно</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hidden-sm col-lg-3 footer-phone">
+                    <h4>Есть вопросы?</h4>
+                    <h5><a href="tel:+380443740520">+38 (044) 374-0520</a></h5>
+                    <h5><a href="tel:+380733740520">+38 (073) 374-0520</a></h5>
+                    <h5><a href="tel:+380952920402">+38 (095) 292-0402</a></h5>
+                    <h5><a href="tel:+380673200402">+38 (067) 320-0402</a></h5>
+                    <h5><a href="tel:+48123337165">+48 12 3337165</a></h5>
+                    <h5 class="mt20"><a href="mailto:in@wiz-trans.com">in@wiz-trans.com</a></h5>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-9 col-xs-12">
+                    <noindex>
+                        <div class="col-md-12 text-center payment-ways">
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/visa.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/verified-by-visa.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/master-card.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/master-card-secure-code.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/alfa.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/privat.png"></a>
+                            </div>
+                            <div class="float-left mr4 mb10">
+                                <a rel="nofollow" target="_blank" href="#"><img src="https://wiz-trans.com/assets/img/payments/liqpay.jpg"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </noindex>
+                </div>
+                <div class="hidden-xs  hidden-sm col-md-3 ">
+                    <ul class="social-login footer">
+                        <li><a href="https://www.facebook.com/wiz.trans/" class="soc"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

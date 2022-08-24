@@ -1,0 +1,235 @@
+//Содержание:
+//Общие стили
+//header
+//  navigation
+//
+//form
+//элементы форм
+//footer
+//Тестовые
+
+
+@import "variables";
+
+//Общие стили
+html, body {
+  min-height: 100%;
+}
+.global-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main-content {
+  flex: 1 0 auto;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//header
+header#main-header {
+  background-color: #D7D7D7;
+  color: $grey;
+  .header-top {
+    padding: 7px 0;
+    background: #fff;
+  }
+  a.logo img {
+    width: 100%;
+  }
+  .header-suitcase i.fa.fa-suitcase {
+    font-size: 55px;
+    color: $blue;
+    position: absolute;
+    z-index: 0;
+  }
+}
+#changePhone {
+  line-height: 16px;
+  font-size: 12px;
+}
+#changePhone a{
+  display: inline-block;
+}
+.after-comma {
+  &:after {
+    content: ', ';
+  }
+}
+#changeLocale {
+  width: auto;
+  height: 34px;
+  color: $blue;
+  float: left;
+  border-radius: 0;
+  border: 1px solid $blue;
+  box-shadow: none;
+  line-height: 1.6em;
+  padding: 5px 12px 6px 6px;
+  background: #fff;
+  font-size: $text-s;
+  margin-top: 35px;
+}
+#changeLocale option {
+  padding: 5px 0;
+}
+.login_for_bonuses {
+  padding-right: 0;
+  margin-left: 20px;
+  float: left;
+}
+.social-login {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    float: right;
+    margin: 0 5px 0 0;
+  }
+  .cabinet a {
+    height: 34px;
+    width: 100%;
+    padding: 2px 10px;
+    background: $blue;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid $blue;
+    transition: .4s;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 27px;
+    display: inline-block;
+  }
+}
+.soc {
+  width: 34px;
+  height: 34px;
+  background: $blue;
+  border: 1px solid $blue;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  transition: .4s;
+  padding: 4px 0 0 0;
+  text-align: center;
+}
+a.top-login:hover {
+  background: 0 0;
+  color: $blue;
+}
+
+//navigation
+nav.nav{
+  align-content: center;
+  justify-content: space-around;
+  >a, .dropdown{
+    padding: 12px 25px;
+    font-size: 12px;
+    color: $grey;
+    text-transform: uppercase;
+    -webkit-transition: background-color .17s ease-out ;
+    -moz-transition: background-color .17s ease-out ;
+    -ms-transition: background-color .17s ease-out ;
+    -o-transition: background-color .17s ease-out ;
+    transition: background-color .17s ease-out ;
+    &:hover, &.active {
+      background-color: $blue;
+      color: #fff;
+  }
+  }
+}
+
+//form
+.top-area {
+  min-height: 350px;
+  background: url("../img/bg/bg.jpg") center center no-repeat;
+}
+
+//элементы форм
+.form-group {
+
+}
+
+/*плашка с инфой*/
+.discountBadge {
+  margin-top: 20px;
+}
+.discountBadge-info img {
+  width:auto;
+}
+.discountBadge-info p {
+  text-transform: uppercase;
+  color: #396087;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+//Расписание
+.trip-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+//основной контент
+.main-content {
+  color: #737373;
+  .special-offers {
+    background-color: #eef4fc;
+    padding: 20px;
+    text-align: center;
+    h4 {
+      color: #737373;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    tr td:first-child {
+      padding-right: 20px;
+    }
+    tr td:last-child {
+      padding-left: 20px;
+    }
+    table {
+      width: 73%;
+      margin: 0 auto;
+    }
+    table tr {
+      border-bottom: 1px solid #5590DE;
+    }
+    table tr td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    table tr:first-child {
+      border-top: 1px solid #5590DE;
+    }
+  }
+  .hot-price {
+    color: #FF0000;
+    float: right;
+  }
+  .hot-price-text {
+    color: #737373;
+  }
+}
+
+//footer
+footer {
+  flex: 0 0 auto;
+
+}
+//Тестовые
+.test {
+  background: red;
+  color: yellow;
+}
+.red {
+  border: 1px red solid;
+}
